@@ -5,18 +5,18 @@ The automation sends onboarding emails to new employees during their first week 
 The workflow also automatically cleans up completed records once the onboarding sequence finishes.
 
 # Key Features
-• Automated onboarding email sequence (Day 1 – Day 5)
-• Handles incorrect HR start dates (weekend adjustments)
-• Skips company holidays automatically
-• Prevents duplicate emails using tracking fields
-• Supports bulk employee upload via SharePoint Grid View
-• Automatically removes completed onboarding records
-• Timezone-aware scheduling (US Eastern Time)
+1. Automated onboarding email sequence (Day 1 – Day 5)
+2. Handles incorrect HR start dates (weekend adjustments)
+3. Skips company holidays automatically
+4. Prevents duplicate emails using tracking fields
+5. Supports bulk employee upload via SharePoint Grid View
+6. Automatically removes completed onboarding records
+7. Timezone-aware scheduling (US Eastern Time)
 
 # Technologies Used
-• Microsoft Power Automate
-• SharePoint Online
-• Microsoft 365
+1. Microsoft Power Automate
+2. SharePoint Online
+3. Microsoft 365
 
 # Automation Logic
 The flow runs daily and follows this logic:
@@ -31,9 +31,9 @@ The flow runs daily and follows this logic:
 
 # Holiday Handling
 If a scheduled email day falls on a company holiday:
-• The email is skipped
-• The corresponding column is marked Holiday
-• The automation continues the next business day
+1. The email is skipped
+2. The corresponding column is marked Holiday
+3. The automation continues the next business day
 
 # Bulk Employee Upload
 Employees can be added in bulk using SharePoint Grid View.
@@ -52,17 +52,17 @@ This ensures the list remains clean and only contains active onboarding users.
 Recurrence Trigger -> Get Employees from SharePoint -> Apply to Each Employee -> Adjust Start Date (Weekend Fix) -> Calculate Days Since Start -> Switch Case (Day 1–Day -> Holiday Check -> Send Email + Update Tracking Field -> Delete Completed Records
 
 # Benefits
-• Eliminates manual onboarding follow-ups
-• Ensures consistent employee communication
-• Handles HR input inconsistencies
-• Reduces administrative overhead
+1. Eliminates manual onboarding follow-ups
+2. Ensures consistent employee communication
+3. Handles HR input inconsistencies
+4. Reduces administrative overhead
 
 # Future Improvements
 Possible enhancements:
-• Business-day calculation for holidays automatically
-• Logging system for sent emails
-• Dashboard reporting for onboarding status
-• Integration with HR systems
+1. Business-day calculation for holidays automatically
+2. Logging system for sent emails
+3. Dashboard reporting for onboarding status
+4. Integration with HR systems
 
 # Author
 Saivandana Unukonda
