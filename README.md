@@ -49,23 +49,7 @@ Once the onboarding sequence finishes, the system automatically removes the empl
 This ensures the list remains clean and only contains active onboarding users.
 
 # Flow Architecture
-Recurrence Trigger
-     ↓
-Get Employees from SharePoint
-     ↓
-Apply to Each Employee
-     ↓
-Adjust Start Date (Weekend Fix)
-     ↓
-Calculate Days Since Start
-     ↓
-Switch Case (Day 1–Day 5)
-     ↓
-Holiday Check
-     ↓
-Send Email + Update Tracking Field
-     ↓
-Delete Completed Records
+Recurrence Trigger -> Get Employees from SharePoint -> Apply to Each Employee -> Adjust Start Date (Weekend Fix) -> Calculate Days Since Start -> Switch Case (Day 1–Day -> Holiday Check -> Send Email + Update Tracking Field -> Delete Completed Records
 
 # Benefits
 • Eliminates manual onboarding follow-ups
